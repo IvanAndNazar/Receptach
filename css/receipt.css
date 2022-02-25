@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mazzard';
+  src: url('../fonts/MazzardH-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+@media (max-width: 1000px) {
+  .wrapper{
+      padding: 2vw;
+  }
+  .receiptPage{
+    position: absolute;
+    width: calc(96vw - 20px);
+    height: calc(var(--vh, 1vh)*96 - 20px);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    border: NONE;
+  } 
+  .nav{
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 3;
+  }
+  .rightBut{
+    margin-left: 50vw;
+  }
+  .progressBar{
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    top: calc(var(--vh, 1vh)*98);
+    z-index: 2;
+    gap: 5px;
+    left: 2vw;
+  }
+  .progressPiece{
+    height: 7px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5)
+  }
+  .description{
+    font-size: 20px;
+    font-family: "Roboto";
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 10px;
+    padding: 7px;
+    z-index: 3;
+  }
+  .number{
+    align-self: flex-end;
+    font-size: 50px;
+    font-family: "Mazzard";
+    color: white;
+  }
+  .empty{
+    flex-grow: 1;
+  }
+  .top{
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px;
+    left: calc(2vw + 10px);
+    top: calc(2vw + 10px);
+    min-width: calc(98vw - 30px);
+  }
+  .user{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 3px 5px 3px 5px;
+    color: white;
+    font-family: "Mazzard";
+    font-size: 20px;
+  }
+  .avatar{
+    border-radius: 50%;
+    width: 5vh;
+    height: 5vh;
+  }
+  .avatarBorder{
+    width: calc(5vh + 4px);
+    height: calc(5vh + 4px);
+    position: absolute;
+    z-index: 4;
+    background: linear-gradient(45deg, #fe8317, #e5ff00);
+    border-radius: 50%;
+    left: calc(2vw + 8px);
+    top: calc(2vw + 8px);
+  }
+  .button{
+    width: 3vh;
+    height: 3vh;
+    display: inline-block;
+    border-radius: 5px;
+    padding:7px;
+    border: 1px solid rgba(255, 255, 255, 0.459);
+    cursor: pointer;
+    transition: .1s all ease-in;
+  }
+  .bookmark :hover{
+    background: url('../svg/bookmark.svg'), rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+  }
+  .bookmark:active{
+    background: url('../svg/bookmark.svg'), rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65%;
+  }
+  .bookmark{
+    background: url('../svg/bookmark.svg'), rgba(0, 0, 0, 0.7);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+  }
+  .close{
+    background: url('../svg/close.svg'), rgba(0, 0, 0, 0.7);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+  }
+  .close :hover{
+    background: url('../svg/close.svg'), rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+  }
+  .close:active{
+    background: url('../svg/close.svg'), rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+  }
+}
